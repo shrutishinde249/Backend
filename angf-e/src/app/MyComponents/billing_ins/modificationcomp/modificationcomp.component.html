@@ -1,0 +1,258 @@
+<div>
+	<div class="main_container">
+	</div>
+</div> 
+<div class="card-body h-900" >
+ 
+    <div class="policy" >
+      <h4 class="modifymain" ><b>Add/Edit invoice Delivery Instruction</b></h4>
+      <hr>
+    </div>
+    <form (ngSubmit)="submit()" ngNativeValidate>
+    <div class="row">
+      <div class="col-sm-2">
+        <p>Instruction Level</p>
+      </div>
+      
+      <div class="col-sm-4">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" (change)="ird()" value="option1">
+        <label class="form-check-label" for="inlineRadio1">Account</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" (change)="irds()"  value="option2">
+        <label class="form-check-label" for="inlineRadio2">Contact</label>
+      </div>
+    </div>
+    </div>
+    <br>
+
+<div class="row" *ngIf="ird_account">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-2">
+<select class="form-select modifyselect" id="instr_level" name="instr_level" [(ngModel)]="instr_level"  aria-label="Default select example" required><option value="Account">Account</option>
+<option value="Billing">Billing</option>
+<option value="Insurance">Insurance</option>
+<option value="Hdfc">Hdfc</option>
+<option value="Union">Union</option>
+</select>
+</div>
+</div>
+<div class="row" *ngIf="ird_contact">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-2">
+<select class="form-select modifyselect" id="instr_level" name="instr_level" [(ngModel)]="instr_level"  aria-label="Default select example">
+<option value="Shruti">Shruti</option>
+<option value="Afroz">Afroz</option>
+<option value="Yaswanth">Yaswanth</option>
+<option value="Saimanohar">Saimanohar</option>
+<option value="Dinesh">Dinesh</option>
+<option value="Vinay">Vinay</option>
+<option value="Shreya">Shreya</option>
+</select>
+</div>
+</div>
+
+
+    <br>
+    <br>
+    <div class="row" >
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+        <label for="desc" class="modifylabel" ></label>
+        <textarea name="desc" class="modifydesc" id="desc" [(ngModel)]="desc" placeholder="Short Description" ></textarea><br>
+      </div>
+    </div>
+    <hr>
+    <p>Global Lines of Business</p>
+    
+  <link href="//cdn.syncfusion.com/ej2/material.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<body class="ej2-new"> 
+
+    <noscript><iframe class="modifyiframe" src="https://www.googletagmanager.com/ns.html?id=GTM-WLQL39J"height="0"width="0"></iframe></noscript>
+    <div hidden id="sync-analytics" data-queue="EJ2 - Angular - Demos"></div>
+
+    <div class="control-section" s>
+      <div class="dual-list-wrapper">
+        <div class="row">
+          <div class="col-sm-6">
+          <div class="dual-list-groupa">
+           
+              <h4  class="sizefordata">Available Global Lines of Business</h4>
+              <ejs-listbox [dataSource]="dataA" #listbox1 [toolbarSettings]="toolbarSettings" class="modifydrag" height="340px" 
+                  scope="#connected-list" [fields]="fields" [allowDragAndDrop]="true" (actionBegin)="actionBegin($event)"(actionComplete)="actionComplete($event)"></ejs-listbox>
+                </div>
+              </div>
+              <div class="col-sm-6">
+          <div class="dual-list-groupb">
+              <h4  class="sizefordata">Selected Global Lines of Business</h4>
+              <ejs-listbox id="connected-list" #listbox2 [dataSource]="dataB" height="340px" class="modifydrag"  [fields]="fields"
+                  [allowDragAndDrop]="true"  scope="#connected-list">
+              </ejs-listbox>
+          </div>
+        </div>
+        </div>
+    
+        
+      </div>
+      <br>
+      <button class="e-btn" (click)="click()">Confirm</button>
+  </div>
+    <p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <div class="row">
+      <div class="col-sm-2">
+        <p>Invoice Delivery</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+        <p> Distribution Type</p>
+      </div>
+      <div class="col-sm-4">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <label class="form-check-label" for="inlineRadio1">Email</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"   value="option2">
+        <label class="form-check-label" for="inlineRadio2">Mail</label>
+      </div>
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+        <p>Multiple Email Address(es)</p>
+      </div>
+      <div class="col-sm-4">
+     
+      <p>To:</p>
+       
+      </div>
+      <div class="col-sm-4">
+     <p>CC:</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+  
+      </div>
+      <div class="col-sm-4" >
+        <div class="form-check form-check-inline">
+          <input class="form-check-input modifyplaceholder" type="email" name="email" id="email" placeholder="Recipient"  required [(ngModel)]="email">
+  
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-check form-check-inline">
+  
+          <input class="form-check-input modifyplaceholder" type="text" name="text" id="text" placeholder="Recipient" >
+        </div>
+      </div>
+   
+    </div>
+    <br>
+    
+    <div class="row">
+      <div class="col-sm-2">
+  
+      </div>
+      <div class="col-sm-4" >
+        <div class="form-check form-check-inline">
+          <input class="form-check-input modifyplaceholder" type="text" name="text" id="text" placeholder="Recipient" >
+  
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-check form-check-inline">
+  
+          <input class="form-check-input modifyplaceholder" type="text" name="text" id="text" placeholder="Recipient" >
+        </div>
+      </div>
+   
+    </div>
+    <br>
+    
+    <div class="row">
+      <div class="col-sm-2">
+  
+      </div>
+      <div class="col-sm-4" >
+        <div class="form-check form-check-inline">
+          <input class="form-check-input modifyplaceholder" type="text" name="text" id="text" placeholder="Recipient" >
+  
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-check form-check-inline">
+  
+          <input class="form-check-input modifyplaceholder" type="text" name="text" id="text" placeholder="Recipient">
+        </div>
+      </div>
+   
+    </div>
+    <br>
+    
+    <div class="row">
+      <div class="col-sm-2">
+  
+      </div>
+      <div class="col-sm-4" >
+        <div class="form-check form-check-inline">
+          <input class="form-check-input modifyplaceholder" type="text" name="text" id="text" placeholder="Recipient" >
+  
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-check form-check-inline">
+  
+          <input class="form-check-input modifyplaceholder" type="text" name="text" id="text" placeholder="Recipient" >
+        </div>
+      </div>
+   
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-2">
+  
+      </div>
+      <div class="col-sm-4" >
+        <div class="form-check form-check-inline">
+          <input class="form-check-input modifyplaceholder" type="text" name="text" id="text" placeholder="Recipient" >
+  
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-check form-check-inline">
+  
+          <input class="form-check-input modifyplaceholder " type="text" name="text" id="text" placeholder="Recipient" >
+        </div>
+      </div>
+   
+    </div>
+  
+   
+    
+  
+
+    <div class="row">
+      <div class="col-sm-2" >
+  
+      </div>
+    <div class="col-sm-10">
+  
+        <p>EMAIL INSTRUCTIONS: </p>
+        <p  class="modifypara">if the client requires delivery to multiple email addresses,provide the email addresses below and update the email address on the send invoice to screen at each policy level to xxx.billing@willistowerwatson.com.(xxx=Agency three letter code e.g.ALA.CAL, TEN, TEX)
+        </p>
+  
+        <p class="modifypara">Note: a single email will be sent to all recipient listed below</p>
+  
+    <input type="submit" value="Submit" class="btn btn-primary">
+      </div>
+  
+    </div>

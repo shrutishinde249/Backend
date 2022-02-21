@@ -1,0 +1,48 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<div class="main_container emailmain">
+		
+		Email Template
+		
+	  </div>
+
+<div >
+  <div class="emailtemp" >
+  <div class="card emailcard" >
+    <div class="card-header emailcardheader">
+      <b>Email</b>
+    </div>
+    <form (ngSubmit)="submit()">
+      <div class="card-body" >
+   
+    <label for="subl" ></label>
+    <input type="text"  id="subl" name="subl" [(ngModel)]="subl" placeholder="Subject Line"  ><br>
+  
+  
+    
+  <label for="body" ></label>
+  <textarea id="body" name="body" [(ngModel)]="body" placeholder="Body" ></textarea><br>
+  
+  
+  
+  <label for="foo" ></label>
+  <textarea id="foo" name="foo" [(ngModel)]="foo" placeholder="Footer" ></textarea>
+  
+  
+  <div class="attach">
+    <h4><input placeholder="Choose an image" id="emailimage"  type="file" name="file" ng2FileSelect [uploader]="uploader" accept=".png, .jpg, .jpeg" (change)="uploader.uploadAll()"></h4>
+    
+  </div>
+  <div class ="button" >
+  <input  type="submit" class="emailedit" value="Edit" id="add" >
+  <input type="reset" class="emailclear" value="Clear" id="clr" >
+  
+  
+  </div>
+  </div>
+  </form>
+  </div>
+  
+  </div>
+  </div>

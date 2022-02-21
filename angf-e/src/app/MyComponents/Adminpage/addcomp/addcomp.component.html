@@ -1,0 +1,17 @@
+<div class="container">
+  <form (ngSubmit)="submit()" ngNativeValidate>
+      <div class="form-group">
+        <label for="lob">Category Name</label>
+        <input type="text" required class="form-control" id="category_name" name="category_name" [(ngModel)]="category_name">
+      </div>
+      <div class="form-group">
+        <label for="cre">Created By</label>
+        <input type="text" required="true" class="form-control" id="createdBy" name="createdBy" [(ngModel)]="createdBy" >
+      </div>
+    
+      <button type="submit" class="button" >Submit</button>
+      &nbsp;
+      <button routerLink="/Lobcat" type="button" class="button">Back</button>
+    </form>
+    </div>
+  

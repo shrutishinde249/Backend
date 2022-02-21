@@ -1,0 +1,30 @@
+.billingviewcard{
+    margin-left: 200px;
+    width: 950px;
+}
+.billingviewheader{
+    margin-left: 100px;
+    margin-right: 13px;
+    background-color: #ebebeb;
+    
+    margin-bottom: 0px;
+    padding-bottom: 50%;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 160px;
+    padding-right: 20px;
+    font-size: 15px;
+    line-height: 20pt;
+}
+.billingviewtable{
+    font-size: 20px;
+    color: black;
+}
+.billingviewback{
+    font-size:18px;
+    width: 80px;
+     height: 35px;
+      background-color: #3399ff;
+      border:none;
+      color:white;
+}

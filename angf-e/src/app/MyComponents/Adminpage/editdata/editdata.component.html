@@ -1,0 +1,22 @@
+
+<div class="container editdataadmin">
+  <form (ngSubmit)="submit()" ngNativeValidate>
+    <div class="form-group admincn">
+      <label for="lob" >Category Name</label>
+      <input type="text" class="form-control" id="lob" name="lob" required  [(ngModel)]="item.lobCategoryName">
+      
+    </div>
+    <div class="form-group admincn">
+      <label for="upd" >Updated By</label>
+      <input type="text" class="form-control" id="upd" name="upd" required [(ngModel)]="item.updatedBy">
+    </div>
+    <div  class="form-check"> 
+      <input class="admin_active"  type="checkbox" [checked]="item.isActive" (change)="item.isActive = !item.isActive">
+      <label class="admin_activer"  class="form-check-label" for="act">Active</label>
+    </div>
+    <button id="admin_submit" type="submit">Submit</button>
+    &nbsp;
+    <button id="admin_back" routerLink="/Lobcat" type="button" >Back</button>
+  </form>
+  </div>
+  

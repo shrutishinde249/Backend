@@ -1,0 +1,160 @@
+.yas{
+
+    background-color: grey;
+}
+h4 {
+    text-align: left;
+    font-weight: 2px;
+    font-size: 18px;
+    
+    }
+    
+   
+    
+    input[type=text], select, textarea {
+    width: 102%;
+    padding-left: -25px;
+    padding-right: 100px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    margin-top: 20px;
+   margin-bottom: 15px;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid black;
+    }
+    
+    
+    
+    .left {
+        position: relative;
+        top: 10;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left:10px;
+        box-sizing: border-box;
+        padding: 40px;
+        padding-top:10px;
+        width: 100%;
+        
+        margin: left 40PX;
+        flex-direction: row;
+        }
+    input[type=attach]{
+    width: 35%;
+    
+    padding-right: 25px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    resize: vertical;
+    margin-left: -67px;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: left;
+    
+    
+    
+    }
+    
+    
+    
+    input[type=submit] {
+    background-color: #04AA6D;
+    padding: 1px 18px;
+    padding-top: 5px;
+    cursor: pointer;
+    border:none;color:white;
+    
+    }
+    input[type=reset] {
+        background-color: #04AA6D;
+        padding: 1px 18px;
+        padding-top: 5px;
+        cursor: pointer;
+        border:none;color:white;
+        
+        }
+
+    input[type=submit]:hover {
+    background-color: #45a049;
+    }
+
+      .button{
+          margin-top: 40px;
+          margin-right: -43px;
+      }
+      .emailmain{
+        background: #dedede;
+		color: grey;
+		font-weight: 0;
+		font-size: 30px;
+		line-height: 18px;
+		margin-top: 65px;
+		margin-left: 7%;
+		padding: 20px;
+		padding-top: 5px;
+		margin-right: 0px;
+		background-color: white;
+      }
+      .emailtemp{
+        margin-left: 100px;
+        margin-right: 0px;
+        background-color: #f0f0f0;
+        margin-bottom: 0px;
+        padding-bottom: 2.6%;
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-right: 15px;
+        font-size: 15px;
+        line-height: 20pt;
+      }
+      .emailcard{
+        max-height: 10%;
+      }
+       .emailcardheader{
+        background-color: white;
+        font-size:18px; 
+       }
+       #subl{
+        font-size:18px;
+        width: 98%;
+        margin-top:10px;
+       }
+       #body {
+        font-size:18px;
+        height:100px;
+        width: 98%;
+         padding-bottom:10px; 
+       }
+       #foo {
+        font-size:18px;
+        height:100px;
+        width: 98%;  
+       }
+       #emailimage{
+        font-size:18px;padding-top: 25px;
+       }
+        .emailedit{
+        font-size:18px;
+        margin-right: 20px; 
+        width: 80px;
+         height: 35px;
+          padding-left: 15px;
+           background-color: lightblue;
+           border:none;
+           color:white;
+       }
+       .emailclear{
+        margin-right:64px;
+         width: 80px; 
+         height: 35px;
+          background-color: lightblue;
+          border:none;
+          color:white;
+       }
+       .button{
+           text-align: right;
+          
+       }

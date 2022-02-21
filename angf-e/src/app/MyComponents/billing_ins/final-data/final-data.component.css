@@ -1,0 +1,20 @@
+.mat-sort-header-container {
+  align-items: center;
+}
+.table {
+  border-collapse: collapse;
+  border-color: grey;
+  border-spacing: 2;
+  width: 120%;
+  border: 2px solid #ddd;
+}
+
+.th {
+  text-align: center;
+}
+.td {
+  text-align: left;
+}
+.finalbody{
+  overflow-x:auto;
+}

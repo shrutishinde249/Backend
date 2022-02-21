@@ -1,0 +1,48 @@
+.form-control{
+    border-top: none;
+    border-left: none;
+    border-right:none;
+    border-bottom: 2px solid grey;
+    
+    }
+    input[type=text]{
+    width:700px;
+    }
+    .edithead{
+    margin-left: 100px;
+        margin-right: 13px;
+        background-color: #ebebeb;
+        
+        margin-bottom: 0px;
+        padding-bottom: 50%;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 100px;
+        padding-right: 20px;
+        font-size: 15px;
+        line-height: 20pt;
+    }
+    .editcard{
+        margin-left: 180px;
+        width: 1000px;
+    }
+    .editagencycode{
+        font-size:18px;
+        color: black;
+    }
+    .editsubmit{
+        font-size:18px;
+        width: 80px;
+         height: 35px; 
+         background-color: #3399ff;
+         border:none;
+         color:white;
+    }
+    .editback{
+        font-size:18px;
+        width: 80px;
+         height: 35px; 
+         background-color: #3399ff;
+          border:none;
+          color:white;
+    }

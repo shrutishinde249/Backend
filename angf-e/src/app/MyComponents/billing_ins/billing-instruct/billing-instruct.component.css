@@ -1,0 +1,76 @@
+.main_container{
+  background: #dedede;
+      color: grey;
+      font-weight: 0;
+      font-size: 30px;
+      line-height: 18px;
+      
+      margin-top: 65px;
+      margin-left: 8%;
+      padding: 20px;
+      padding-top: 5px;
+      margin-right: 0px;
+      background-color: white;
+    }
+  
+   .search_con{
+    margin-left: 100px;
+      margin-right: 13px;
+      background-color: #ebebeb;
+      margin-bottom: 0px;
+      padding-bottom: 50%;
+      text-align: left;
+      padding-left: 20px;
+      padding-top: 2px;
+      padding-right: 20px;
+      font-size: 15px;
+      line-height: 20pt;
+   }
+  
+    .cards{
+      max-height: 400%;
+      margin-top: 50px;
+    }
+     .cardheader{
+      background-color:white;
+      margin-top: 20px;
+      padding-top: 7px;
+      font-size: medium;
+     }
+     .clientnamesr{
+      width: 100%;
+      border-top: 20px;
+      border:none;
+      border-bottom: 2px solid grey;
+      border-right: none;
+     }
+     .submitdata{
+      width: 40px;
+      border: none;
+      background-color: white;
+      color: black
+     }
+     .modalheader{
+      height: 65px;
+      background: #ebebeb;
+     }
+     .tablehead{
+       margin-top: 10px;
+     }
+     .bluebackground{
+     background-color: lightblue;
+     }
+     .footer{
+       margin-top: 230px;
+     }
+     .modifiydata{
+      padding-left: 10%; 
+      padding-top:-10%
+     }
+     .billingmodealfade{
+      width: 1300px;
+      margin-top: 80px;
+     }
+     .billingmodealcontent{
+     width: 900px;
+     }

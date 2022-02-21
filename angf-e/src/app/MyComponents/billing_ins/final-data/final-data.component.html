@@ -1,0 +1,41 @@
+<div>
+  
+  <!-- <p>{{item.id}}</p>
+  <p>{{item.client_name}}</p>
+  <p>{{item.code}}</p> -->
+  
+
+
+<body>
+
+
+
+<div class ="card-body finalbody">
+  <table class="table" matSort (matSortChange)="sortData($event)"> 
+    <tr>
+      <th scope="col" mat-sort-header="level">Instruction level</th>
+      <th scope="col" mat-sort-header="code">Epic Agency Code</th>
+      <th scope="col" mat-sort-header="siteId">Site ID</th>
+      <th scope="col" mat-sort-header="contact">Contact name</th>
+      <th scope="col" mat-sort-header="glob">GLOB</th>
+      <th scope="col" mat-sort-header="desc">Description</th>
+      <th scope="col" mat-sort-header="updatedby">Updated by</th>
+      <th scope="col" mat-sort-header="updated on">Updated on</th>
+      <th scope="col">Action</th>   
+    </tr>
+  <tr *ngFor="let x of this.item.client_inv_del.$values">
+    <td scope="row">{{x.inv_delivery.instr_level}}</td>
+    <td scope="row">{{x.inv_delivery.agency_code}}</td>
+    <td scope="row">{{x.inv_delivery.s_id}}</td>
+    <td scope="row">{{x.inv_delivery.contact_name}}</td>
+    <td scope="row">{{x.inv_delivery.glob}}</td>
+    <td scope="row">{{x.inv_delivery.desc}}</td>
+    <td scope="row">{{x.inv_delivery.updated_by}}</td>
+    <td scope="row">{{x.inv_delivery.updated_on}}</td>
+    
+    <td scope="row"> <a href="#" [routerLink]="['/billing-instruction/', item.id, 'view',x.inv_delivery.id,'item']"> <i style="color: black;" class="fas fa-eye"></i></a>&nbsp;|&nbsp;<a href="#" [routerLink]="['/billing-instruction/', item.id, 'edit',x.inv_delivery.id,'item']" > <i style="color: black;" class="fas fa-edit"></i></a></td>
+      
+  </tr>
+  </table>
+
+</div>

@@ -1,0 +1,18 @@
+.editdataadmin{
+    margin-top: 5%;margin-left: 9%;
+}
+.admincn{
+    font-size: 18px;
+}
+.admin_active{
+    height:17px;width: 17px;
+}
+.admin_activer{
+    padding-bottom: 2%;padding-left: 0.8%;font-size:18px;
+}
+#admin_submit{
+    font-size:18px;width: 80px; height: 35px; background-color: #3399ff;border:none;color:white;
+}
+#admin_back{
+    font-size:18px;width: 80px; height: 35px; background-color: #3399ff; border:none;color:white;
+}

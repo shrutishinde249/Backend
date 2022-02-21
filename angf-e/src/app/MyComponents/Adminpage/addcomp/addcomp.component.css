@@ -1,0 +1,17 @@
+.container .form-group{
+    font-size:18px;
+}
+
+.container{
+    margin-top: 5%
+    ;margin-left: 9%;
+}
+
+.container .button{
+    font-size:18px;
+    width: 80px;
+    height: 35px; 
+    background-color: #3399ff; 
+    border:none;
+    color:white;
+}

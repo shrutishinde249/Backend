@@ -1,0 +1,39 @@
+.modifymain{
+    text-align:left;
+    margin-top: -10px;
+    margin-left: 9px;
+    height: 30px;
+    padding-right: 30px;
+    padding-top: 16px;
+     font-size: 15px;
+}
+.modifyselect{
+    margin-top: 1px;
+     width: 500px;
+     border:none;
+     border-bottom:2px solid grey;
+}
+.modifylabel{
+    color: lightgray;
+    text-align: left;
+}
+.modifydesc{
+    border:none;
+    border-bottom:2px solid grey;
+    width:900px;
+}
+.modifyiframe{
+    display:none;
+    visibility:hidden
+}
+.modifyplaceholder{
+    width: 380px;
+    border:none;
+    border-bottom: 2px solid grey;
+}
+.modifypara{
+    font-size: small;
+}
+.modifydrag{
+    width: 600px;
+}

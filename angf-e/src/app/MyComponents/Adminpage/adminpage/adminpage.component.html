@@ -1,0 +1,77 @@
+<div style="margin-top: 5%;">
+	<div class="main_container adminmaincontainer">
+		
+		Global Lines Of Business
+		
+	  </div>
+	  <div class="body_container adminbodycontainer">
+		<div >
+			<div class="card">
+				<div class="card-header paragraph " >
+				  <b >Add/ Edit Global Lines Of Business</b>
+				</div>
+					<div class="space" >
+						<div class="card-body">							
+							<input type="text"class="adminglobal" placeholder="Global Lines Of Business" >	
+								<select id="setstatus"  >
+									<option value="Status">Status</option>
+  									<option value="Active">Active</option>
+  									<option value="InActive">InActive</option>
+								</select>
+							<input class="adminadd" routerLink="/Lobcat/create" type="button" value="Add" id="add" >
+							<input class="adminclear" type="button" value="Clear" id="clr" >									
+						</div>
+					</div>								
+			</div>
+			<div id="admintable"class="card">	
+				 
+					<div id="admintable" >
+						<div class="card-body">
+							
+							<table class="table">
+								<thead>
+								  <tr>
+									<th scope="col" >Sr</th>
+									<th scope="col" >Global Lines Of Business</th>
+									<th scope="col" >Status</th>
+									<th scope="col" >Action</th>
+								  </tr>
+								</thead>
+								
+								<tbody *ngFor="let item of homels.$values">
+									
+								  <tr>
+									<td scope="row"><b> {{item.id}}</b></td>
+									<td>{{item.lobCategoryName}}</td>
+									<td>
+									<div *ngIf="item.isActive==true else templateName">
+										Active
+									</div>
+									
+									<ng-template #templateName>
+										In-Active
+									</ng-template>
+									</td>
+									<td> <a href="#" [routerLink]="['/Lobcat/', item.id, 'view']" > <i style="color: black;" class="fas fa-eye"></i></a>&nbsp;|&nbsp;<a href="#" [routerLink]="['/Lobcat/', item.id, 'edit']" > <i style="color: black;" class="fas fa-edit"></i></a>&nbsp;|&nbsp;<a (click)="deletelob(item.id)" > <i class="fas fa-trash-alt"></i></a></td>
+								  </tr>				  
+								</tbody>								
+							  </table>		
+							</div>
+						</div>
+					</div>
+					<div  id="top" >
+						<div class="card" >
+						<div class="card-header" id="card-header-color">
+							 <div id="bodyemail">
+								<div class="card-body">
+									<input routerLink="/email-template" class="email" type="button" value="Email" id="add" >
+									<input routerLink="/Lobcat/policy" class="policy" type="button" value="Policy" id="add" >
+								 </div>
+								</div>
+							</div>
+						 </div>
+						 </div>
+				  </div>
+			</div>
+			
+		  </div>	

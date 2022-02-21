@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  /*box-sizing: border-box;*/
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: white;
+
+}
+p{
+
+  line-height: 25pt;
+}
+.wrapper .body_container .down{
+  margin-top:2%;
+  margin-right: 100px;
+  background-color: white;
+  margin-bottom: 2%;
+  padding-bottom:50px;
+  text-align: left;
+  line-height:10pt;
+  font-size: 15px;
+  height:300px;
+}
+.wrapper .body_container .Add{
+  
+  margin-right: 100px;
+  background-color: #ffffff;
+  margin-bottom: 0px;
+  padding-bottom:50px;
+  text-align: left;
+  line-height:10pt;
+  padding-top: 0px;
+  font-size: 15px;
+}
+
+.wrapper .body_container .Add .add1 input {
+  padding-left:20px;
+  border: none;
+  position: relative;
+  bottom:0;
+  right:0;
+
+}
+.wrapper{
+  margin: 0px;
+  height:0%;
+}
+.wrapper .top_navbar{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  z-index: 500;
+}
+
+.wrapper .top_navbar .hamburger{
+  width: 70px;
+  height: 100%;
+  background: #2e4ead;
+  
+  /*border-top-left-radius: 20px;*/
+  cursor: pointer;
+}
+
+
+
+.wrapper .top_navbar .top_menu{
+  width: 100%;
+  height: 70%;
+  background: #ebebeb;
+  /*border-top-right-radius: 20px;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*padding: 20px;*/
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  padding-top: 0px;
+}
+
+
+.wrapper .top_navbar .top_menu .logo{
+  color: black;
+  font-size: 20px;
+  
+  letter-spacing: 1px;
+  text-align: left;
+  padding-left: 1px;
+}
+.wrapper .top_navbar .top_menu .user{
+  justify-content: space-between;
+
+  
+}
+
+.wrapper .top_navbar .top_menu .user ul{
+  display: flex;
+  float: right;
+}
+.wrapper .top_navbar .top_menu .user ul ui{
+  /*width: 120px;
+  margin: 15px;*/
+  text-align: right;
+}
+.wrapper .top_navbar .top_menu .user ul li a{
+  display: block;
+  /*margin: 0 0px;*/
+  /*width: 35px;*/
+  height: 45px;
+  line-height: 45px;
+  text-align: right;
+  /*border: 1px solid #2e4ead;*/
+  /*border-radius: 50%;*/
+  color: #2e4ead;
+}
+
+.wrapper .top_navbar .top_menu .user ul li a:hover{
+  background: #4360b5;
+  color: #fff;
+  text-align: right;
+}
+
+.wrapper .top_navbar .top_menu .user ul li a:hover i{
+  color: #fff;
+}
+
+
+.wrapper .sidebar{
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  z-index: 500;
+  background: #57574e;
+  width: 100px;
+  height: calc(100% - 50px);
+  /*border-bottom-left-radius: 20px;*/
+  transition: all 0.3s ease;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 1px;
+    color: white;
+    /*white-space: nowrap;*/
+    text-align: center;
+    font-size:40px;
+    line-height: 2px;
+}
+
+.wrapper .sidebar ul li a:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: #92a6e2;
+  display: none;
+}
+
+.wrapper .sidebar ul li a span.icon{
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.wrapper .sidebar ul li a span.title{
+  display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+  background: purple;
+  color: white;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+  display: block;
+}
+
+
+
+
+.wrapper .main_container .item1{
+  background: #dedede;
+  color: grey;
+  font-weight: 0;
+  font-size: 30px;
+  line-height: 18px;
+  
+  margin-top: 65px;
+  margin-left: 90px;
+  padding: 20px;
+  padding-top: 5px;
+  margin-right: 0px;
+  background-color: white;
+}
+
+.wrapper .body_container .item2{
+  margin-left: 100px;
+  margin-right: 0px;
+  background-color: #f0f0f0;
+  margin-bottom: 0px;
+  padding-bottom: 32%;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-right: 15px;
+  font-size: 15px;
+  line-height: 20pt;
+
+}
+
+.wrapper.collapse .sidebar{
+  width: 70px;
+}
+
+.wrapper.collapse .sidebar ul li a{
+  text-align: center; 
+  
+}
+
+.wrapper.collapse .sidebar ul li a span.icon{
+  margin: 0;
+}
+
+.wrapper.collapse .sidebar ul li a span.title{
+  display: none;
+}
+
+.wrapper.collapse .main_container{
+  width: (100% - 70px);
+  margin-left: 70px;
+}

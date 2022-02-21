@@ -1,0 +1,180 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div style="margin-top: 5%;">
+	<div class="main_container ">
+		<div class="distriutionmain" >
+	Distribution Work Queue
+		</div>
+        <div class="distriutionbuttons">
+        <div class="row">
+            
+            
+                <div class="col-sm-2">
+            <button class="btn btn-primary btnstyle" type="button" >Email Distribution</button>
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-primary btnstyle" type="button" >Distribute By Mail</button>
+            </div>
+            <div class="col-sm-2">
+
+            </div>
+           
+            <div class="col-sm-2 ">
+            <button class="btn btn-primary btnstyle" type="button" >Manual Distribution</button>
+            </div>
+            <div class="col-sm-2">
+            <button class="btn btn-primary btnstyle" type="button">Route to CM</button>
+            </div>
+            <div class="col-sm-2 ">
+            <button class="btn btn-primary btnstyle" type="button" >Do Not Distribute</button>
+            </div>
+      
+           </div>
+        </div>
+	  </div>
+</div>
+<div >
+  <div class="distributionpad">
+<div class="card distributioncard" >
+  <div class="card-header distributionheader" >
+    <b>Summary</b>
+  </div>  
+  <form class="card-body" >
+    <div >
+        <div class="row">
+            <div class="col-sm-2">
+                <div   >
+                   <input  type="button" class="change" value=" Marked For CM Review" (click)="submit()" (click)="scroll1(target)">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div >
+                    <input  type="button" class="change" value=" Email Ready" >
+                </div>
+            </div><div class="col-sm-2">
+                <div >
+                    <input  type="button" class="change" value=" Print Ready"  >
+                </div>
+            </div><div class="col-sm-2">
+                <div >
+                    <input  type="button" class="change" value=" Special Handling"  >
+                </div>
+            </div><div class="col-sm-2">
+                <div >
+                    <input  type="button" class="change" value=" Do Not Distribute"  >
+                </div>
+            </div><div class="col-sm-2">
+                <div >
+                    <input  type="button" class="change" value=" Multiple Attachments"  >
+                </div>
+            </div>
+        </div>
+      </div>
+   
+      <p  class="para"></p>
+      <div >
+          <div class="row">
+              <div class="col-sm-2">
+                  <div class="change">---</div>
+              </div>
+              <div class="col-sm-2">
+                  <div class="change">---</div>
+              </div><div class="col-sm-2">
+                  <div class="change">---</div>
+              </div><div class="col-sm-2">
+                  <div class="change">---</div>
+              </div><div class="col-sm-2">
+                  <div class="change">---</div>
+              </div><div class="col-sm-2">
+                  <div class="change">---</div>
+              </div>
+          </div>
+        </div>
+     
+       </form>
+</div>
+
+
+<div class="card searchcard" >
+    <div class="card-header searchheader" >
+      <b>Search</b>
+    </div>
+    
+    <form (ngSubmit)="onSubmit()" class="card-body" >
+
+      <div class="row">
+        <div class="col-sm-10 ">
+         
+         <input type="text" class="clientnamesr" id="c_name" name="c_name" [(ngModel)]="c_name" placeholder="Client"  >
+        
+       </div>
+       <div class="col-sm-1">
+       <button type="submit" class="btn btn-primary submitdata" data-toggle="modal" data-target="#exampleModal" >Search</button>
+       </div>
+       <div class="col-sm-1">
+     
+        <input class="btn btn-primary submitdata" type="reset" value="Clear" ></div>
+     
+     </div>
+  
+      
+        <div class="modal fade billingmodealfade"  id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document" >
+            <div class="modal-content billingmodealcontent"   >
+              <div class="modal-header modalheader">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+             
+            
+                    
+  
+              <table  id="dtBasicExample" class="table table-striped table-bordered table-sm tablehead" cellspacing="0"   >
+                  <thead>
+                    <tr>
+                      <th scope="col">Attachment Name</th>
+                      <th scope="col">Date/Time Approved</th>
+                      <th scope="col">Epic Agency Code</th>
+                      <th scope="col">Current Status</th>
+                      <th scope="col">Installment No.</th>
+                      <th scope="col">Delivery Method</th>
+                      <th scope="col">Client Email</th>
+                      <th scope="col">Client Name</th>
+                      <th scope="col">Client Code</th>
+                    </tr>
+                  </thead>
+                  
+                    <tbody class="bluebackground">
+                      <tr >
+                      <td scope="row">{{obj.attachment_Name}}</td>
+                      <td scope="row">{{obj.aprroved}}</td>
+                      <td scope="row">{{obj.agency_Code}}</td>
+                      <td scope="row">{{obj.status}}</td>
+                      <td scope="row">{{obj.installment_No}}</td>
+                      <td scope="row">{{obj.delivery_Method}}</td>
+                      <td scope="row">{{obj.email}}</td>
+                      <td scope="row">{{obj.client_name}}</td>
+                      <td scope="row">{{obj.code}}</td>
+                       
+                      </tr>
+                    </tbody>
+                    
+                     
+              </table>
+              
+              
+  
+              <div class="modal-footer footer" >
+                <button type="button" class="btn btn-primary submitdata" data-dismiss="modal">Close</button>  
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    
+        <div #target style="padding-top:10%;"> 
+          <app-cardbody [item]="item"></app-cardbody>  
+        </div>
+  
+  
+

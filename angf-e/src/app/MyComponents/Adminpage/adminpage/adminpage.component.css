@@ -1,0 +1,82 @@
+.adminmaincontainer{
+  background: #dedede;
+		color: grey;
+		font-weight: 0;
+		font-size: 30px;
+		line-height: 18px;
+		margin-top: 65px;
+		margin-left: 8%;
+		padding: 20px;
+		padding-top: 5px;
+		margin-right: 0px;
+		background-color: white;
+}
+.adminbodycontainer{
+  margin-left: 100px;
+		margin-right: 0px;
+		background-color: #f0f0f0;
+		margin-bottom: 0px;
+		padding-bottom: -32%;
+		text-align: left;
+		padding-left: 30px;
+		padding-top: 20px;
+		padding-right: 15px;
+		font-size: 15px;
+		line-height: 20pt;
+}
+.adminbodycontainer .paragraph{
+  margin:18px;
+  margin-bottom: 10px;
+ background-color: white;
+  font-size: 18px;
+}
+.adminbodycontainer .space{
+  padding: 10px;
+  margin-left: 14px;
+  margin-top: 1.5%;
+  padding-bottom:3%;
+  background-color: white;
+}
+.card-body .adminglobal{
+  all:unset;
+  width:230px;
+  font-size: 18px;
+  margin-left:30px;
+  border: none;
+   border-bottom: 2px solid grey;
+}
+#setstatus{
+  all:unset; 
+  margin-left:60px; 
+  width:80px;
+   border-bottom:2px solid grey;
+    font-weight:0;
+    font-size:18px;
+    color:grey
+}
+.adminadd{
+  margin-left:30px; width: 80px; height: 35px; background-color: #3399ff;border:none;color:white;;font-size:18px;
+}
+.adminclear{
+  margin-left:15px; width: 80px; height: 35px; background-color: #3399ff;border:none;color:white;font-size:18px;
+}
+#admintable{
+  margin-top: 3%;
+  font-size:18px;
+  padding: 10px;
+}
+#card-header-color {
+  background-color: white
+}
+#bodyemail{
+padding:10px;margin-left: 358px;margin-top: 0%;
+}
+.email{
+  margin-left:60px; width: 80px; height: 35px; background-color: #3399ff;border:none;color:white;font-size:18px;
+}
+.policy{
+  margin-left:50px; width: 80px; height: 35px; background-color: #3399ff;border:none;color:white;font-size:18px;
+}
+#top{
+  margin-top: 5%;
+}

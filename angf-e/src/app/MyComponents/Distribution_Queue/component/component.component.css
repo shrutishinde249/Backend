@@ -1,0 +1,82 @@
+.change{
+    /*width:185px;*/
+    background-color: purple;
+    color: white;
+    width:223px;
+    text-align: center;
+    border: 15px solid purple;
+    }
+    .btnstyle{
+        font: size 16px;width: auto; height: 45px; background-color: #3399ff;border:none;color:white;width:240px;
+    }
+    .distriutionmain{
+        background: #dedede;
+            color: grey;
+            font-weight: 0;
+            font-size: 30px;
+            line-height: 18px;		
+            margin-top: 65px;
+            margin-left: 6%;
+            padding: 20px;
+            padding-top: 5px;
+            margin-right: 0px;
+            background-color: white;
+    }
+    .distriutionbuttons{
+        background: #dedede;
+            color: grey;
+            font-weight: 0;
+            font-size: 30px;
+            line-height: 18px;
+            
+            margin-top: 20px;
+            margin-left: 8%;
+            margin-right: 0px;
+            background-color: white;
+            margin-bottom: 15px;
+    }
+    .distributionpad{
+        margin-left: 100px;
+        margin-right: 13px;
+        background-color: #ebebeb;
+        margin-bottom: 0px;
+        padding-bottom: 50%;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 2px;
+        padding-right: 20px;
+        font-size: 15px;
+        line-height: 20pt;
+    }
+    .distributioncard{
+        max-height: 400%;margin-top: 50px;
+    }
+    .distributionheader{
+        background-color:white;margin-top: 20px;padding-top: 7px;font-size: medium;
+    }
+    .para{
+        margin-top : -13px; 
+    }
+    .searchcard{
+        max-height: 400%;margin-top: 50px;
+    }
+    .searchheader{
+        background-color:white;margin-top: 20px;padding-top: 7px;font-size: medium;
+    }
+    #c_name{
+        width: 40%;border:none;border-bottom: 2px solid grey;border-right: none;
+    }
+    .distributionsearch{
+        font: size 16px;width: 80px; height: 35px; background-color: #3399ff;border:none;color:white;margin-right:10px;
+    }
+    .distributionclear{
+        font: size 16px;width: 80px; height: 35px; background-color: #3399ff;border:none;color:white;
+    }    
+
+    .billingmodealfade{
+        width: 1300px;
+        margin-top: 80px;
+       }
+       .billingmodealcontent{
+       width: 900px;
+       }

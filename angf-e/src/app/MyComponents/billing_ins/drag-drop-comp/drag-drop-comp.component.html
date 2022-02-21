@@ -1,0 +1,25 @@
+
+  <link href="//cdn.syncfusion.com/ej2/material.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<body class="ej2-new"> 
+
+    <noscript><iframe class="iframe" src="https://www.googletagmanager.com/ns.html?id=GTM-WLQL39J"height="0"width="0"></iframe></noscript>
+    <div hidden id="sync-analytics" data-queue="EJ2 - Angular - Demos"></div>
+
+    <div class="control-section section" >
+        <div class="dual-list-wrapper">
+            <div class="dual-list-groupa">
+                <h4 class="sizefordata" >Available Global Lines of Business</h4>
+                <ejs-listbox [dataSource]="dataA" #listbox1 [toolbarSettings]="toolbarSettings" height="340px" width="10px"
+                    scope="#connected-list" [fields]="fields" [allowDragAndDrop]="true" (actionBegin)="actionBegin($event)"(actionComplete)="actionComplete($event)"></ejs-listbox>
+            </div>
+            <div class="dual-list-groupb">
+                <h4 class="sizefordata">Selected Global Lines of Business</h4>
+                <ejs-listbox id="connected-list" #listbox2 [dataSource]="dataB" height="340px" width="10px" [fields]="fields"
+                    [allowDragAndDrop]="true"  scope="#connected-list">
+                </ejs-listbox>
+            </div>
+        </div>
+        <button class="e-btn" (click)="click()">Get Data</button>
+    </div>
